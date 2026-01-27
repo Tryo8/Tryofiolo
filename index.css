@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Kedebideri:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Science+Gothic:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*:focus-visible{
+    outline: 2px solid #7237f3;
+    box-shadow: none;
+}
+
+a{
+    appearance: none;
+}
+
+.text__purple{
+    color: #7237f3;
+}
+
+html, body {
+    min-height: 100vh !important;
+    min-width:100vh !important;
+    margin: 0;
+}
+
+.bg__body{
+    background: linear-gradient(135deg, #ffffff 0%, #fbfcfe 50%, #eef1f5 100%);
+}
+
+body {
+    background: linear-gradient(135deg, #ffffff 0%, #fbfcfe 50%, #eef1f5 100%);
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.download__btn{
+    background: linear-gradient(135deg, #5d1de8, #7237f3, #621cfb);
+    color: white;
+    border-radius: 5rem;
+    align-items: center;
+    display: inline-flex;
+    align-content: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: 0;
+    outline: 3px solid transparent;
+    transition: all 0.1s linear;
+    &:hover{
+        outline: 3px solid #5d1de861;
+        filter: brightness(1.05);
+    }
+}
+
+.card {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.5s ease forwards;
+}
+
+.hover__effect:hover {
+    transition: all 0.25s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.hover__effect:hover .card-content {
+  transform: translateY(0);
+}
+
+.card:nth-child(1){
+    animation-delay: 0.2s;
+}
+.card:nth-child(2){
+    animation-delay: 0.3s;
+}
+.card:nth-child(3){
+    animation-delay: 0.4s;
+}
+.card:nth-child(4){
+    animation-delay: 0.5s;
+}
+.card:nth-child(5){
+    animation-delay: 0.6s;
+}
+.card:nth-child(6){
+    animation-delay: 0.7s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hove__color{
+    transition: all 0.25s ease;
+    &:hover{
+        filter: brightness(1.2);
+    }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #3774f3, #6a8cff, #9b5cff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.html{
+    background: linear-gradient(135deg, #e34f26, #f06529, #ff6c39);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.css {
+  background: linear-gradient(135deg, #3178c6, #3178c6, #0050a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.js {
+  background: linear-gradient(135deg, #f7df1e, #e5c500, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ts {
+  background: linear-gradient(135deg, #3178c6, #2b70ba, #266cb8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.angular{
+    background: linear-gradient(90deg, #ff3b3f, #dd0031, #a30024);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.react{
+    background: linear-gradient(135deg, #61dafb, #21a1f1, #0d8ecf);
+        background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.java {
+  background: linear-gradient(135deg, #5382a1, #f8981d, #de5400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.node{
+    background: linear-gradient(135deg, #3C873A, #68A063);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.springboot{
+    background: linear-gradient(135deg, #8BC34A, #81ba40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.bootstrap {
+    background: linear-gradient(135deg, #7952B3, #563D7C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontawesome {
+    background: linear-gradient(135deg, #1f76be, #288ada);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.npm {
+    background: linear-gradient(135deg, #CB3837, #E44D47);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mysql {
+    background: linear-gradient(135deg, #00758f, #0995b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.postman {
+    background: linear-gradient(135deg, #ee6d3f, #ef6a3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vsCode {
+    background: linear-gradient(135deg, #1f9cf0, #1574b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.git {
+    background: linear-gradient(135deg, #F05032, #FF6B45);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ 
+}
+.col{
+    height: 90px;
+    font-size: 14px;
+}
+
+.col-lg-2{
+    height: 90px;
+    font-size: 14px;
+}
+.bg__transparent__dark{
+    background-color: rgba(32, 32, 32, 0.627);
+}
+
+.welcome__text {
+  background: linear-gradient(
+    390deg,
+    #c61de8,
+    rgb(64, 118, 245),
+    #7c1de8,
+    #275ecd,
+    #c61de8
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+    figure img {
+        height: 110px !important;
+        width: 110px !important;
+    }
+    .hover__effect {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+    .hover__effect div {
+        font-size: 0.75rem;
+    }
+    .card {
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-6 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .hover__effect {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    h4.gradient-text {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+}
