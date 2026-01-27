@@ -247,6 +247,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 768px) {
+    .headers__p{
+           font-size: 0.6rem !important;
+    }
     figure img {
         height: 110px !important;
         width: 110px !important;
@@ -268,6 +271,9 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+    .headers__p{
+           font-size: 0.6rem !important;
+    }
     .hover__effect {
         flex: 0 0 45%;
         max-width: 45%;
@@ -279,5 +285,13 @@ h1, h2, h3, h4, h5, h6 {
 
     p {
         font-size: 0.85rem;
+    }
+}
+@media (max-width: 576px) {
+    .headers__p{
+        font-size: 0.6rem !important;
+    }
+    .hover__effect i {
+        font-size: 2rem !important;
     }
 }
