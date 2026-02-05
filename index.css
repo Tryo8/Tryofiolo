@@ -44,7 +44,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .download__btn{
+    position: relative;
     background: linear-gradient(135deg, #5d1de8, #7237f3, #621cfb);
+    background-size: 400% 400%;
+    animation: gradientMove 5s ease infinite;
     color: white;
     border-radius: 5rem;
     align-items: center;
@@ -57,11 +60,47 @@ h1, h2, h3, h4, h5, h6 {
     border: 0;
     outline: 3px solid transparent;
     transition: all 0.1s linear;
+    .icon{
+        position: absolute;
+        opacity: 0;
+    }
     &:hover{
-        outline: 3px solid #5d1de861;
+        outline: 3px solid #5d1de836;
         filter: brightness(1.05);
+        box-shadow: 0 8px 22px rgba(107, 17, 203, 0.326);
+        padding-left: 35px;
+        .icon{
+            animation: animIcon 0.9s infinite linear;
+            left: 15px;
+            opacity: 1;
+        }
     }
 }
+
+
+    @keyframes animIcon {
+        0%{
+            top:10px;
+            opacity: 0.3;
+        }
+        70%{
+            top:18px;
+            opacity: 1;
+        }
+        100%{
+            top:10px;
+             opacity: 0.3;
+        }
+        
+    }
+
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
 .card {
     font-family: 'Montserrat', sans-serif;
@@ -295,3 +334,4 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2rem !important;
     }
 }
+
