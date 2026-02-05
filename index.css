@@ -61,8 +61,8 @@ h1, h2, h3, h4, h5, h6 {
     outline: 3px solid transparent;
     transition: all 0.1s linear;
     .icon{
-        position: absolute;
-        opacity: 0;
+        position: absolute !important;
+        opacity: 0 !important;
     }
     &:hover{
         outline: 3px solid #5d1de836;
@@ -70,9 +70,9 @@ h1, h2, h3, h4, h5, h6 {
         box-shadow: 0 8px 22px rgba(107, 17, 203, 0.326);
         padding-left: 35px;
         .icon{
-            animation: animIcon 0.9s infinite linear;
-            left: 15px;
-            opacity: 1;
+            animation: animIcon 0.9s infinite linear !important;
+            left: 15px !important ;
+            opacity: 1 !important;
         }
     }
 }
@@ -334,4 +334,5 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2rem !important;
     }
 }
+
 
